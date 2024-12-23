@@ -747,9 +747,6 @@ subplot 313
 plot(T,Dhat_z,'r--','linewidth',2.2)
 hold on
 DHAT_Z = Dhat_z;
-DHAT_Z(2) = -10;
-DHAT_Z(3) = -20;
-DHAT_Z(3) = -33;
 
 plot(T, DHAT_Z,'b','linewidth',1)
 grid on
@@ -798,7 +795,7 @@ e_D_psi = D_sai - Dhat_sai;
 
 NORM = [norm(real(e_D_x))
                norm(real(e_D_y))
-               12.4213
+               norm(real(e_D_z))
                norm(real(e_D_phi))
                norm(real(e_D_theta))
                norm(real(e_D_psi))];
